@@ -9,8 +9,8 @@ def hello_world():
 @app.route('/getTweets')
 def getRetweets():
 	t = Tweets()
-	tweet_list = t.functionname()
+	tweet_list = t.getRetweets()
 	return jsonify(results=tweet_list)
 
 if __name__ == '__main__':
-   app.run("127.0.0.1", "5009")
+   app.run()
