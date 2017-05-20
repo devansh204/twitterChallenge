@@ -1,4 +1,4 @@
-import tweet
+from tweet import Tweets
 from flask import Flask, jsonify
 app = Flask(__name__)
 
@@ -7,8 +7,9 @@ def hello_world():
    return 'Server Working'
 
 @app.route('/getTweets')
-def returnTweets():
-	tweet_list = tweet.functionname()
+def getRetweets():
+	t = Tweets()
+	tweet_list = t.functionname()
 	return jsonify(results=tweet_list)
 
 if __name__ == '__main__':
