@@ -8,9 +8,9 @@ This file contains the authorisation tokens (Access Token, Access Token Secret, 
 
 <b>route.py</b>
 
-I have used the <b>Flask</b> - a micro web framework - to create the APIs.
+I have used the <b>Flask</b> - a micro web framework - to create the APIs. For the requests routed to /getTweets, the code returns the list of tweets. 
 
-How To Run
+To Run:
   1) Define the authorisation tokens in config.py
   2) Execute the route.py
   
